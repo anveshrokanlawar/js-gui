@@ -8,12 +8,14 @@
 </head>
 <body>
   <main class="container-fluid">
-    <h1>Application to display total number of students</h1>
+    <h1>Application to display total number of students</h1><br>
+    <br>
     <h3>Given # of courses and avg students/course, calculate total number of students</h3>
-    <p>courses:
+    <br>
+    <p>Number of courses:
       <input id="num" type="number" value="0">
     </p>
-    <p>avgstudents:
+    <p>Avgerage Number of students:
       <input id="sec" type="number" value="0">
     </p>
     <button id="clicker" class="btn btn-primary" onclick="myfuction()">Calculate !</button>
@@ -22,9 +24,9 @@
   <script>
          function myfuction()
         {
-            let s1=parseInt(document.getElementById("num").value);
-            let s2=parseInt(document.getElementById("sec").value);
-            let ans=s1*s2;
+            const s1=parseInt(document.getElementById("num").value);
+            const s2=parseInt(document.getElementById("sec").value);
+            const ans=s1*s2;
             document.getElementById("result").innerHTML="total number of students are "+ans;
            
         }
